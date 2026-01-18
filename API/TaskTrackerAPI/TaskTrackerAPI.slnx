@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="build-tests-pipeline.yaml" />
+    <File Path="Dockerfile.dev" />
+  </Folder>
   <Project Path="TaskTrackerAPI.Tests/TaskTrackerAPI.Tests.csproj" Id="9c8d34df-d540-4e20-88a4-d84a7410f896" />
   <Project Path="TaskTrackerAPI/TaskTrackerAPI.csproj" />
 </Solution>
