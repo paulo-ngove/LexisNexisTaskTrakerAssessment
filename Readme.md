@@ -48,16 +48,6 @@ The API will be available at `http://localhost:7155`
 dotnet test
 ```
 
-## **CI/CD Pipeline**
-The project includes GitHub Actions workflows that:
-1. **Run tests** on push/PR to main/develop branches
-2. **Build Docker image** and push to GitHub Container Registry
-3. **Security scan** with Trivy and OWASP Dependency Check
-4. **Deploy automatically** to development on merge to `develop`
-5. **Require approval** for production deployment from `main`
-
-Trigger manually from Azure DevOps or on code push.
-
 ## **Project Structure**
 ```
 TaskTrackerAPI/
@@ -117,24 +107,6 @@ yarn dev
 ```
 
 The application will open at `http://localhost:3000`
-
-## **Available Scripts**
-
-### **Development**
-| Command | npm | yarn | Description |
-|---------|-----|------|-------------|
-| Start dev server | `npm run dev` | `yarn dev` | Starts Vite dev server with HMR |
-| Build for production | `npm run build` | `yarn build` | Creates optimized production build |
-| Preview production build | `npm run preview` | `yarn preview` | Locally preview production build |
-| Lint code | `npm run lint` | `yarn lint` | Run ESLint |
-| Type check | `npm run type-check` | `yarn type-check` | Run TypeScript compiler check |
-
-### **Testing**
-| Command | npm | yarn | Description |
-|---------|-----|------|-------------|
-| Run unit tests | `npm test` | `yarn test` | Run Vitest tests |
-| Run tests with UI | `npm run test:ui` | `yarn test:ui` | Open Vitest UI |
-| Run tests with coverage | `npm run test:coverage` | `yarn test:coverage` | Generate test coverage report |
 
 
 ## **Project Structure**
